@@ -1,0 +1,29 @@
+---
+layout: post
+title:  git游记
+subtitle: "艰难的git之旅"
+author: "Shadow"
+avatar: "image/IMG_2916.jpg"
+thumbnail: fa-anchor
+date:   2015-12-19 0:04:10
+---
+#0x00
+ 今天刚换的主题，本想着花两个小时把之前没写好的django补一下，结果发现git一直有问题（问题在于我），于是就弱弱的打开了chrome，进行git补习
+ ，看了很多篇文章，从很多个碎片整合出来一个结果，以前理解的git 都不对。
+#0x01
+ 现在来说一下我对git的大体理解（极其片面，勿喷）。git 一个版本控制工具，能让你或者你的团队能一起受到制约的共同开发，而github只是一个远程的服务器，
+ 进行版本托管的工具。我们需要进行的主要操作就是从远程服务器（即你的github仓库）获取（`pull`）代码，或者你把你更改过的代码上传（`push`）到服务器（或者同一个团队的成员）
+ 中间会有一些辅助操作
+1.在本地建立控制空间（`init`）（新建一个本地仓库，存储下载下来的远程代码）
+2.将你的想要更改的加入到git的一个数据结构中（`add`），等待确认提交。
+3.确认提交更改（`commit`）只是代码还是在本地，知道执行了push命令。
+ 
+ 现在从头开始一次项目。   
+  `git init` 
+  `git remote add origin git@github.com:shadow625/shadow625.github.io.git`这里就相当于一次赋值过程，将这个远程的github地址赋给origin ，以后origin就代表这个地址，是我们取
+  同步代码等的键击量减少了很多。   
+  `git clone origin master`这意味着将origin代表的远程仓库的master分支的代码克隆到当前工作目录下。
+  `git add A|./` 当你更改代码并在本地进行了测试后 就应该执行这一条指令了，现在还不懂原理，应该是git会把这些可能会被更改的文件存入一个数据结构，或者文件。然后当你确认提交后，就会将这些更改应用到远端   `git commit -m “something you wanna say to remind you incase”`或者`git commit -a`将所有全部提交
+  `git push -u origin master` 我遇到的问题就是在这里 由于之前不知道，我就直接使用了git push，然后他就直接将代码同步到他的默认分支：gh-pages
+但是github的博客文件是从master分支下读取的，所以导致我的更改一直没有效。当时都快看疯了，
+  完成了 这就是我的体会了。

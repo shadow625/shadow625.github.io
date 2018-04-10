@@ -1,0 +1,41 @@
+---
+layout:     post
+title: 		SDN 特战队-target
+date:       2016-05-21 12:32:18
+summary:    当前任务表
+categories: SDN
+thumbnail: SDN
+author: "shadow"
+tags:
+ - SDN
+ - ryu mininet
+ - team
+---
+
+### 知识清单
+
+- (**重点难点**) ryu 北向接口（rest API ）[链接](http://ryu.readthedocs.io/en/latest/ryu_app_api.html#ryu-application-programming-model)
+- (**进行中**) web(准备一个简单的web程序，提供记录IP功能)
+- (**完成**）GUI 提供拓扑结构展示功能 学习如何使用[ryu starter -kit](http://sdnhub.org/releases/sdn-starter-kit-ryu/) 
+
+### 当前进度
+
+#### 1. 对于mininet的操作。
+- 与远程ryu控制器连接  
+	`sudo mn --controller remote`  
+	`ryu-manager {app-list}`
+- 实现mininet的正确操作，   
+	![picture](/image/mininet/mininet.png)
+- 自定义拓扑结构，   
+	在mininet文件夹下有一个custom文件夹（并没有强制规定，只要在命令中指定到文件路径即可）默认存放自定义的topo结构等。
+	`sudo mn --controller remote --custom ./custom/(topo.*).py topo=mytopo`
+	如下是在~/mininet/custom/topo-2h-2s.py 路径下的文件内容，中间我做了修改添加了一个host-h3
+	![picture](/image/mininet/custom.png)  
+
+#### 2. ryu北向API的使用。
+- 查看ryu文件下的`ryu/app/ofctl_rest.py`文件，其详细介绍了ryu北向API的使用，并通过代码定义了openflow 协议。希望大家能仔细看一下注释内容（关于北向API的使用介绍）。流表查看、下发等问题。  
+- ryuAPP的编写，实现简单的web应用（涉及到CGI脚本的理解到Python wsgi）
+大家可以看一下这个文章[关于wigi 简单网站](http://www.muzixing.com/pages/2015/05/13/ryuzhong-wsgixue-xi-bi-ji-yu-restapikai-fa.html)
+具体与ryuAPP的切合还没有掌握好，希望有人能做一下。  
+
+
