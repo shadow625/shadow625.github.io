@@ -14,7 +14,7 @@ tags:
 ## 框架介绍
 selenium 是个很好的web自动化测试框架，通过和webdriver进行交互，对浏览器进行操作，对于chrome IE Firefox（火狐是原生支持，虽然我也不知道啥意思） 都有很好支持，chrome是我最为钟爱的浏览器，今天就用chrome作为展示对象，安装并使用selenium。   
 
-##安装
+## 安装
 
 1. 首先我们需要Python的包管理器 `pip`   
 通过[wget](https://bootstrap.pypa.io/get-pip.py) 获得pip.py这个文件   
