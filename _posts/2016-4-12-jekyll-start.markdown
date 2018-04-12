@@ -8,7 +8,7 @@ thumbnail: fa-anchor
 date:   2016-4-15 12:12:12
 ---
 
-
+### jekyll background
    用jekyll好久了（好吧一直是通过github-page简介用的）今天终于在自己的电脑上搭好了Jekyll的本地环境（你问我装了多长时间： 6个月你信不信）在这里记录下Jekyll的搭建和使用的一些经验吧
 首先我是在github—pages 上第一次接触Jekyll 
 当时正想搭建一个博客平台，但是感觉wordpress太low（应该就是了解不深导致印象不好吧），自己写前段改代码又太菜，这时实验室同桌在搞的一个博客界面吸引了我的眼球，界面很清新，功能不多不少，正是我脑海中完美的一个博客环境，（对，没错 我就是那个时候才知道有github-pages这个东西）而且有很多漂亮的开源模板可以使用（不信是吧，来看看[*Jekyll主题*](http://jekyllthemes.org/))   
