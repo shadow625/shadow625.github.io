@@ -7,7 +7,7 @@ avatar: "image/IMG_2916.jpg"
 thumbnail: fa-anchor
 date:   2015-12-17 12:12:12
 ---
-# django笔记
+## django笔记
 http 建模 ：描述django响应过程。
 
 1. web服务器收到一个http请求（Apache 收到一个Post请求，通过什么传给django）
