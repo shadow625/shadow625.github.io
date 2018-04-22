@@ -3,12 +3,8 @@ layout:     post
 title:      Thread VS Runnable,concurrent
 date:       2016-09-15 21:35:18
 summary:    Thread VS Runnable,concurrent
-categories: Thread VS Runnable,concurrent
-thumbnail: MutiThread
-author: "shadow"
-tags:
- - MutiThread
- - shadow grand
+categories: java
+
 ---
 
 java 多线程 thread runnable

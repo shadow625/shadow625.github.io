@@ -2,13 +2,7 @@
 layout:     post
 title:      Django static 配置
 date:       2016-05-26 12:32:18
-summary:    django Content
 categories: Django
-thumbnail: Django
-author: "shadow"
-tags:
- - thumbnails
- - shadow grand
 ---
 
 今天通过网页实现了一个数据库添加员工并显示出来，现在来总结一下遇到的问题。

@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  android安全狗-SDK分析
-subtitle: "Android-SDK分析"
-author: "Shadow"
-avatar: "image/IMG_2916.jpg"
-thumbnail: fa-anchor
+categories: security
+description: some word here
+keywords: keyword1, keyword2
 date:   2016-4-5 12:12:12
 ---
 

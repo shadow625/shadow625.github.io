@@ -1,7 +1,7 @@
 ---
 layout: post
 title: android  opencv
-categories: [android, opencv]
+categories: android
 description: some word here
 keywords: keyword1, keyword2
 ---

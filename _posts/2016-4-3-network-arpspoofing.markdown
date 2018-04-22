@@ -1,10 +1,9 @@
 ---
 layout: post
 title:  network-arp欺骗
-subtitle: "network security"
-author: "Shadow"
-avatar: "image/IMG_2916.jpg"
-thumbnail: fa-anchor
+categories: security
+description: some word here
+keywords: keyword1, keyword2
 date:   2016-4-3 12:12:12
 ---
 

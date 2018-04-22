@@ -3,13 +3,7 @@ layout:     post
 title:      Oracle 存储过程小记
 date:       2016-08-29 21:35:18
 summary:    Oracle 存储过程
-categories: Oracle SQL
-thumbnail: Oracle
-author: "shadow"
-tags:
- - Oracle
- - SQL
- - shadow grand
+categories: DataBase
 ---
 
 #### 定义

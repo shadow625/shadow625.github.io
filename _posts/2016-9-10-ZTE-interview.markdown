@@ -2,13 +2,8 @@
 layout:     post
 title:      小强中兴面经
 date:       2016-09-10 21:35:18
-summary:    中兴面经
 categories: interview
-thumbnail: ZTE
-author: "shadow"
-tags:
- - interview
- - shadow grand
+
 ---
 
 ## 中兴面试经验积累

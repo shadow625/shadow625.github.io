@@ -1,10 +1,9 @@
 ---
 layout: post
 title: jekyll——安装过程及界面定制
-subtitle: "Jekyll——road"
-author: "Shadow"
-avatar: "image/IMG_2916.jpg"
-thumbnail: fa-anchor
+categories: framework
+description: some word here
+keywords: keyword1, keyword2
 date:   2016-4-15 12:12:12
 ---
 

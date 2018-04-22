@@ -2,13 +2,9 @@
 layout:     post
 title:      Android进程间通信	
 date:       2016-05-05 12:32:18
-summary:    some imformation about the UML
-categories: Android
-thumbnail: Android
-author: "shadow"
-tags:
- - thumbnails
- - shadow grand
+categories: android
+description: some word here
+keywords: keyword1, keyword2
 ---
 
 ### 进程间通信

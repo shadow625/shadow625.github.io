@@ -2,14 +2,7 @@
 layout:     post
 title: 		SDN 特战队-target
 date:       2016-05-21 12:32:18
-summary:    当前任务表
 categories: SDN
-thumbnail: SDN
-author: "shadow"
-tags:
- - SDN
- - ryu mininet
- - team
 ---
 
 ### 知识清单

@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  git游记
-subtitle: "艰难的git之旅"
-author: "Shadow"
-avatar: "image/IMG_2916.jpg"
-thumbnail: fa-anchor
 date:   2015-12-19 0:04:10
+categories: git
+description: git 
 ---
 
 

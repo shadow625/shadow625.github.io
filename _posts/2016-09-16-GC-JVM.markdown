@@ -3,12 +3,8 @@ layout:     post
 title:      JVM-GC
 date:       2016-09-16 21:35:18
 summary:    JVM-GC
-categories: JVM-GC
-thumbnail: JVM
-author: "shadow"
-tags:
- - GC
- - shadow grand
+categories: java
+
 ---
 
 #### JAVA垃圾回收算法

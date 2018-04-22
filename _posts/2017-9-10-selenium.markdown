@@ -2,13 +2,7 @@
 layout:     post
 title:      selenium
 date:       2017-09-10 21:35:18
-summary:    tech
 categories: framework
-thumbnail: selenium
-author: "shadow"
-tags:
- - selenium
- - shadow grand
 ---
 
 ## 框架介绍
