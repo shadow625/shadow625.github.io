@@ -1,14 +1,9 @@
 ---
 layout:     post
 title:      min stack-java
-date:       2016-04-19 12:32:18
-summary:    leetcode 155
-categories: django
-thumbnail: leetcode
-author: "shadow"
-tags:
- - leetcode
- - shadow grand
+description: 155 leetcode
+categories: algorithms
+keywords: leetcode, algorithm
 ---
 
 ### 0X00:问题描述  

@@ -1,3 +1,12 @@
+---
+layout: post
+title: android  opencv
+categories: [android, opencv]
+description: some word here
+keywords: keyword1, keyword2
+---
+
+
 ## 今天安装测试了Android下的opencv，大致理解整体过程。
 
 首先安装opencv manager 这是一个将JAVA翻译native语言的过程工具，我们通过调用opencv JAVA API去实现响应的功能。

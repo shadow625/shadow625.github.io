@@ -1,3 +1,12 @@
+---
+layout: post
+title: docker-learning
+categories: docker
+description: docker playground
+keywords: docker, container
+---
+
+
 ### 首先docker在ubuntu下的安装。
 
 看一下这个链接：https://docs.docker.com/engine/installation/linux/ubuntulinux/
