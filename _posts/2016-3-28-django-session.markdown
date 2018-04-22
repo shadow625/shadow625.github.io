@@ -1,12 +1,10 @@
 ---
 layout: post
 title:  django_road-session
-subtitle: "django learning"
-author: "Shadow"
-avatar: "image/IMG_2916.jpg"
-thumbnail: fa-anchor
+categories: django
 date:   2015-12-17 12:12:12
 ---
+
 ## django笔记
 http 建模 ：描述django响应过程。
 

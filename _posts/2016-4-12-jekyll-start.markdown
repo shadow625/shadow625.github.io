@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jekyll——安装过程及界面定制
-categories: framework
+categories: FunCode
 description: some word here
 keywords: keyword1, keyword2
 date:   2016-4-15 12:12:12

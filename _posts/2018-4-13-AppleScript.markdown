@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 心情不好，拿appleScript开个刀
-categories: funTool
+categories: FunCode
 description: 这是你被浪费的时间
 keywords: auto workflow
 ---

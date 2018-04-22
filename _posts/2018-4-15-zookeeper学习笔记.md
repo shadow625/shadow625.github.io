@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ZooKeeper，动物园的管理员
-categories: [分布式, web后台]
+categories: 分布式
 description: 分布式应用的基础
 keywords: zookeeper, kafka ,同步原语，CAP
 ---

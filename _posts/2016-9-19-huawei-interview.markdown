@@ -1,14 +1,8 @@
 ---
 layout:     post
-title:      huawei
+title:      huawei 面试经历
 date:       2016-09-19 21:35:18
-summary:    中兴面经
 categories: interview
-thumbnail: HW
-author: "shadow"
-tags:
- - interview
- - shadow grand
 ---
 
 
