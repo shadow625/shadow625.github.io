@@ -38,3 +38,30 @@ keywords: keyword1, keyword2
             return Math.max(robber[nums.length][0],robber[nums.length][1]);
         }
     }
+    
+**自顶向下的递归防范解决**
+
+每一步都是上一步结果的叠加.时间较长
+
+    import java.lang.Math;
+    class Solution {
+
+        public int rob(int[] nums) {
+            return recuRobber(nums,nums.length);
+        }
+
+        public int recuRobber(int[] nums ,int num){
+            if (num==0) {
+                return 0;
+            }
+            if (num==1) {
+                return nums[0];
+            }
+            if (num==2) {
+                return Math.max(nums[0],nums[1]);
+            }
+            int robberNo=recuRobber(nums,num-1);
+            int robberYes=recuRobber(nums,num-2)+nums[num-1];
+            return Math.max(robberYes,robberNo);
+        }
+    }
