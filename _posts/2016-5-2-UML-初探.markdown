@@ -2,14 +2,12 @@
 layout:     post
 title:      Android项目-UML图试画		
 date:       2016-05-02 12:32:18
-summary:    some imformation about the UML
 categories: UML
-thumbnail: UML
-author: "shadow"
-tags:
- - thumbnails
- - shadow grand
+description: some word here
+keywords: keyword1, keyword2
 ---
+
+
 ### 需求分析： #  
 需求就是对期望的行为的表达。需求处理的是对象或实体，他们可能处于的状态，以及用于改变状态或对象特征性的功能。 需求是制定客户需要什么行为，而不是如何实现这些行为。  
 
