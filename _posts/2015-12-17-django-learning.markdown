@@ -4,11 +4,6 @@ title:      django-road
 date:       2015-08-08 12:32:18
 summary:    some imformation about the django
 categories: django
-thumbnail: jekyll
-author: "shadow"
-tags:
- - thumbnails
- - shadow grand
 ---
 
 ### 0x00：开始接触  
