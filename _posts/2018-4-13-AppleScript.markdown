@@ -78,6 +78,38 @@ keywords: auto workflow
 		end if
 	end tell
 	 
+xinde 
+
+	tell application "MacDown"
+		set today to current date
+		set amonth to month of today as string
+		
+		set num to 0
+		set {year:y, month:m, day:d} to (current date)
+		set theDate to (do shell script "date +'%Y-%m-%d'")
+		do shell script "say name this blog > /dev/null 2>&1 &"
+		display dialog "what is the name of the blog" default answer "jackson blog" buttons {"Cancel", "OK"} default button 2
+		if the button returned of the result is "OK" then
+			set tname to (text returned of the result)
+			set datename to "/Users/shadow/prog/blog_gitpage/_posts/" & theDate & "-" & tname
+			tell application "System Events" to set fileExists to exists disk item (my POSIX file datename as string)
+			if fileExists then
+				say "文件已经存在了"
+			else
+				make new document at front
+				set text of front document to "---
+	layout: post
+	title: template page
+	categories: [cate1, cate2]
+	description: some word here
+	keywords: keyword1, keyword2
+	---"
+				save front document in datename as Markdown
+				say "创建成功了"
+			end if	
+		end if
+	
+end tell
 ## the end
 
 暂时写到这里吧，早点休息，好好生活。原谅我一年没写代码了，只能拿这个找存在感了。
