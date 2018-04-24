@@ -78,7 +78,7 @@ keywords: auto workflow
 		end if
 	end tell
 	 
-xinde 
+2018-4-25更新 #
 
 	tell application "MacDown"
 		set today to current date
@@ -108,8 +108,9 @@ xinde
 				say "创建成功了"
 			end if	
 		end if
+	end tell
 	
-end tell
+2018-4-25更新结束 #
 ## the end
 
 暂时写到这里吧，早点休息，好好生活。原谅我一年没写代码了，只能拿这个找存在感了。
