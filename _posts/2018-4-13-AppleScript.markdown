@@ -78,7 +78,7 @@ keywords: auto workflow
 		end if
 	end tell
 	 
-2018-4-25更新 #
+2018-4-25更新 # 代码再次优化
 
 	tell application "MacDown"
 		set today to current date
