@@ -2,7 +2,7 @@
 layout:     post
 title:      min stack-java
 description: 155 leetcode
-categories: algorithms
+categories: algorithm
 keywords: leetcode, algorithm
 ---
 
