@@ -34,7 +34,8 @@ keywords: auto workflow
 
 
 ### show time
-这是<font color=#609900>developer.apple</font>对AppleScript的定义
+这是
+    <font color=#609900>developer.apple</font>对AppleScript的定义
 
 >AppleScript is a scripting language created by Apple. It allows users to directly control scriptable Macintosh applications, as well as parts of macOS itself. You can create scripts—sets of written instructions—to automate repetitive tasks, combine features from multiple scriptable applications, and create complex workflows.<br>
 
