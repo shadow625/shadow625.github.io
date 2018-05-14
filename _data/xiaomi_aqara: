@@ -1,0 +1,4 @@
+xiaomi_aqara:
+  gateways:
+      - mac: 
+        key: 

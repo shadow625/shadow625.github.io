@@ -1,0 +1,6 @@
+小米台灯:24b54d88d27d8599919f08a9db6c26cc
+
+xiaomi_aqara:
+  gateways:
+      - mac: 7811dcf9a4e2
+        key: y7u6rfy3fzgytjv3
