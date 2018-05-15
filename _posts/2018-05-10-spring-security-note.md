@@ -7,6 +7,7 @@ keywords: spring, security
 ---
 
 ### spring security 认证方式随记：
+记录下来学习spring security的基础知识，不要求深入掌握，但是能知道其实现的方式及能做到的功能都是什么
 
 
 - CAS Central Authentication Service，集中认证服务，即多个程序需要获取认证信息时，向一个认证服务器（或服务集群）请求认证信息。主要针对大型企业网站的单点登录（SSO）场景，即登录了淘宝后，你再打开天猫或者支付宝，就不需要输入用户口令再次认证了。
