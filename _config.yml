@@ -88,7 +88,7 @@ comments_provider: disqus
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: 
+    username: shadowgrand
     shortname: shadowgrand
 # ---------------- #
 #      Search      #
