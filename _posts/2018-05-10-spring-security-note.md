@@ -1,12 +1,14 @@
 ---
 layout: post
-title: template page
+title: spring security
 categories: web
 description: spring
 keywords: spring, security
 ---
 
 ### spring security 认证方式随记：
+
+
 - CAS Central Authentication Service，集中认证服务，即多个程序需要获取认证信息时，向一个认证服务器（或服务集群）请求认证信息。主要针对大型企业网站的单点登录（SSO）场景，即登录了淘宝后，你再打开天猫或者支付宝，就不需要输入用户口令再次认证了。
 - saml Security Assertion Markup Language 安全断言标记语言。是一个基于XML的开源标准数据格式，它在当事方之间交换身份验证和授权数据，尤其是在身份提供者和服务提供者之间交换。SAML解决的最重要的需求是网页浏览器单一登录（SSO）
 - JAAS Java认证和授权服务（Java Authentication and Authorization Service，简称JAAS）是一个Java以用户为中心的安全框架，作为Java以代码为中心的安全的补充。自Java运行环境（JRE） 1.4起，JAAS就被集成到JRE，而之前是作为一个扩展库由Sun公司提供的。
