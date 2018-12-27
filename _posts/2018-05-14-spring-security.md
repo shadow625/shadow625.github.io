@@ -31,10 +31,46 @@ keywords: spring security
 	    private Date create_time;
 	}
 
-下一步是查找表信息，spring data jpa 有通用的接口，通过repository调用下层ORM模型提供的jpa接口，之前的ORM模型，例如hibernate mybatis openjpa 等虽然都实现了相应的jpa规范，但是不同的模型需要使用不同的使用规范，因此产生各种不同的配置代码，且需要更换模型时需要对源代码进行大量重构，而spring data jpa的作用就是简化这些操作，通过repository统一作为数据源的访问节点，然后再乡下寻找配置的ORM模型，例如hibernate（spring 默认）简化了一直以来被诟病的数据层模板代码冗余的情况
+下一步是查表再输入到Entity类里，spring data jpa 有通用的接口，通过repository调用下层ORM模型提供的jpa接口，之前的ORM模型，例如hibernate mybatis openjpa 等虽然都实现了相应的jpa规范，但是不同的模型需要使用不同的使用规范，因此产生各种不同的配置代码，且需要更换模型时需要对源代码进行大量重构，而spring data jpa的作用就是简化这些操作，通过repository统一作为数据源的访问节点，然后再乡下寻找配置的ORM模型，例如hibernate（spring 默认）简化了一直以来被诟病的数据层模板代码冗余的情况
 
-此处只需要做如下的接口继承就能实现数据库的CRUD操作。CrudRepository 定义了一些统一的接口，用于快速调用，如findALL save，等等，我们可以根据我们的需求结合User类中的属性进行自定义查找，而这些只需要声明一个方法，根据方法名你就能知道你要做什么吧，通过用户名查找，那么机器现在也知道了，不用多做什么DAO sql-query 这就够了，方法返回一个可以为null的Optional对象，我们只需要在认证时访问以下这个对象就可以了。
+此处只需要做如下的接口继承就能实现基本的数据库CRUD操作。CrudRepository 定义了一些统一的接口，用于快速调用，如findALL save，等等，我们可以根据我们的需求结合User类中的属性进行自定义查找，而这些只需要声明一个方法，根据方法名你就能知道你要做什么吧，通过用户名查找，那么spring现在也知道了，方法返回一个可以为null的Optional对象，我们只需要在认证时访问以下这个对象就可以了。
 
+	@Repository
 	public interface UserRepository extends CrudRepository<User, Id> {
 	    Optional<User> findByUsername(String username);
 	}
+
+这就完成了之前DAO层多个类做到的功能，需要的时候一个@Autowired 就能查找，很是方便。
+
+### 认证过程
+下面就是认证，
+对于spring security DAO认证，首先我们描述一下这个认证过程是什么样子的，在认证过程中，对应用户名的用户信息都需要存储在一个UserDetails对象中，这里面存储了当前用户的用户名密码，以及是否过期，是否重置，是否启用等状态信息，而我们要做的就是把userdetails对象生成出来并传递给认证管理者（注意 DAO的认证实现方式有很多个，本文只展示其中一个，希望大佬们多指教）而这一步承上启下的实现就是由UserDetailsService完成的，我们对authenticationManagerBuilder设置他的UserDetailsService，那么产生认证请求时，就会调用UserDetailsService的loadUserByname方法获取用户名对应的UserDetails，我们在这一方法中查库并装载成UserDetails就完成了认证信息的递交过程。
+
+    @Service
+    @Slf4j
+    public class UserDetailsServiceImpl implements UserDetailsService
+    {
+        @Autowired
+        UserRepository userRepository;
+
+
+        User user;
+        @Override
+        public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+            Optional<User> iter=userRepository.findByUsername(username);
+            if (iter.isPresent()){
+                user=iter.get();
+                return org.springframework.security.core.userdetails.User
+                        .withUsername(user.getUsername())
+                        .password(new BCryptPasswordEncoder().encode(user.getPassword()))
+                        .roles("USER")
+                        .build();
+
+            }
+            throw new UsernameNotFoundException(username+":this name not found");
+
+        }
+    }
+
+
+[[项目地址]]()
